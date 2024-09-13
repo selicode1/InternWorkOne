@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.image-slider {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.image:nth-child(1) {
+    animation: fade 12s infinite;
+}
+
+.image:nth-child(2) {
+    animation: fade 12s infinite 4s; /* Start after 4s */
+}
+
+.image:nth-child(3) {
+    animation: fade 12s infinite 8s; /* Start after 8s */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    33% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    66% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+
+.building {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.building img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.firm-profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-inline: 10%;
+    margin-block: 5%;
+  }
+  
+  .firm-logo img {
+    width: 400px;
+    height: auto;
+    border: 5px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+  .firm-details {
+    margin-left: 30px;
+  }
+  
+  .firm-details h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .divider {
+    width: 50px;
+    border: 1px solid #d68f4e; /* The orange color */
+    margin-bottom: 10px;
+  }
+  
+  .firm-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .firm-profile {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .firm-details {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    
+    .firm-logo img {
+      width: 120px;
+    }
+  }
+  

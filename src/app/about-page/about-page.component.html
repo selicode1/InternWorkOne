@@ -1,0 +1,174 @@
+<body>
+    <app-navigation-bar></app-navigation-bar>
+
+    <app-mini-nav></app-mini-nav>
+
+    <section class="quick-access1">
+        <h2>DREAM IT. LIVE IT</h2>
+        <div class="sec1">
+            <img src="/images/2148972401.jpg" alt="Building Image"/>
+            <div class="content">
+                <h3>Who We Are</h3>
+                <p>The measure of who we are is what we have done with what we have.</p>
+                <p class="quote">Founded by architects William and Karen Halm in 2010.</p>
+                <p>
+                    Spektra Global is a design and build professional firm 
+                    providing architectural, interior design and build as well 
+                    as construction management services for corporate 
+                    institutions and private individuals in Ghana. Spektra prides 
+                    itself in providing innovative architectural and interior designs 
+                    to ensure that client needs are exceeded, while maintaining world 
+                    class practices.
+                </p>
+                <p>
+                    Spektra has been involved in the design and build of offices, 
+                    commercial facilities, religious buildings, educational and civic 
+                    facilities, residential and accommodation facilities as well as 
+                    the master planning of some prestigious estates and educational 
+                    complexes.
+                </p>
+                <p>
+                    Spektra currently has 23 permanent staff, with fluctuating numbers 
+                    of casual workers depending on projects at hand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-access1">
+        <h2>WHAT WE STAND FOR</h2>
+        <div class="grid-container">
+            <div class="grid-items">
+                <h1>01</h1>
+                <div class="grid-item">
+                    <h3>OUR MISSION</h3>
+                    <p>We design and build with you in mind to enrich the way you live, work and play.</p>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h1>02</h1>
+                <div class="grid-item">
+                    <h3>OUR VISION</h3>
+                    <p>To be the cutting-edge design and build partner in Africa.</p>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h1>03</h1>
+                <div class="grid-item">
+                    <h3>BRAND COMMITMENT</h3>
+                    <p>Timeliness with pampering.</p>
+                </div>
+            </div>
+            <div class="grid-items">
+                <h1>04</h1>
+                <div class="grid-item">
+                    <h3>OUR TAGLINE</h3>
+                    <p>Dream It. Live It</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="quick-access1">
+        <h2>OUR MANDATE</h2>
+        <div class="access-cards">
+            <div class="card1">
+                <div class="card-content">
+                    <h3>OUR VALUES</h3>
+                    <ul>
+                        <li>
+                            Teamwork
+                        </li>
+                        <li>
+                            Innovation
+                        </li>
+                        <li>
+                            Thoughtfulness
+                        </li>
+                        <li>
+                            Timeliness
+                        </li>
+                        <li>
+                            Effective Communication
+                        </li>
+                        <li>
+                            Respect
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card-content">
+                    <h3>CORE TEAM</h3>
+                    <ul>
+                        <li>
+                            Architects
+                        </li>
+                        <li>
+                            Project Managers
+                        </li>
+                        <li>
+                            Quantity Surveyors
+                        </li>
+                        <li>
+                            CAD Technicians
+                        </li>
+                        <li>
+                            Site Supervisors
+                        </li>
+                        <li>
+                            Administrative Support
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="card-content">
+                    <h3>OUR SERVICES</h3>
+                    <ul>
+                        <li>
+                            Architecture
+                        </li>
+                        <li>
+                            Interior Design
+                        </li>
+                        <li>
+                            Construction
+                        </li>
+                        <li>
+                            Timeliness
+                        </li>
+                        <li>
+                            Housing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="quick-access1">
+        <h2>WHAT OUR CLIENTS SAY</h2>
+        <video width="700" height="400" controls loop>
+            <source src="/videos/5309381-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <video width="700" height="400" controls loop>
+            <source src="/videos/5309381-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+    </section>
+
+
+    <section class="quick-access1">
+        <h2>WE WORK WITH TOP CLIENTS</h2>
+        <div class="project-gallery">
+            <div class="project-item" *ngFor="let project of projects">
+              <img [src]="project.image" [alt]="project.title" class="project-image"/>
+            </div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>
+</body>
+

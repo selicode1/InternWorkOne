@@ -1,0 +1,38 @@
+nav {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.page-nav {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+#about-nav {
+    background-color: #bcc1ce;
+}
+
+#firm-nav {
+    background-color: #9b9fa9;
+}
+
+#leadership-nav {
+    background-color: #4b505d;
+}
